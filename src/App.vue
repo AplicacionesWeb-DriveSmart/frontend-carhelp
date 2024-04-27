@@ -1,17 +1,18 @@
 <script>
 import Register from './components/pages/register.component.vue'
+import LoginForm from "./components/login/login.component.vue";
+import Menu from './components/pages/menu.component.vue'
 
 
 export default {
   name:'app',
-  components: {Register}
+  components: {Register, LoginForm, Menu}
 }
 
 </script>
 
 <template>
-
-<register></register>
+ <register></register>
 </template>
 
 <style scoped>
