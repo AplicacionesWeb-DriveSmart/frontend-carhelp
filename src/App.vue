@@ -5,17 +5,17 @@ import Menu from './components/pages/menu.component.vue'
 import ClientList from "./components/pages/client-list.component.vue";
 import ClientProfile from "./components/pages/client-profile.component.vue";
 import ClientAdd from "./components/pages/client-add.component.vue";
-
+import ClientDeleteConfirmation from "./components/pages/client-delete-confirmation.component.vue";
 
 export default {
   name:'app',
-  components: {ClientList, ClientProfile, ClientAdd, Register, LoginForm, Menu}
+  components: {ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu}
 }
 
 </script>
 
 <template>
- <ClientAdd></ClientAdd>
+ <ClientDeleteConfirmation></ClientDeleteConfirmation>
 </template>
 
 <style scoped>
