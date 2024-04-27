@@ -3,18 +3,19 @@ import Register from './components/pages/register.component.vue'
 import LoginForm from "./components/login/login.component.vue";
 import Menu from './components/pages/menu.component.vue'
 import ClientList from "./components/pages/client-list.component.vue";
+import ClientProfile from "./components/pages/client-profile.component.vue";
 
 
 
 export default {
   name:'app',
-  components: {ClientList, Register, LoginForm, Menu}
+  components: {ClientList, ClientProfile, Register, LoginForm, Menu}
 }
 
 </script>
 
 <template>
- <ClientList></ClientList>
+ <ClientProfile></ClientProfile>
 </template>
 
 <style scoped>

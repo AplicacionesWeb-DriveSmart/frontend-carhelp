@@ -1,7 +1,7 @@
 
 <script>
 export default {
-  name: 'Clientlist',
+  name: 'ClientList',
 }
 </script>
 
