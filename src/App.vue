@@ -2,10 +2,10 @@
 import Register from './components/pages/register.component.vue'
 import LoginForm from "./components/login/login.component.vue";
 import Menu from './components/pages/menu.component.vue'
-import ClientList from "./components/pages/client-list.component.vue";
-import ClientProfile from "./components/pages/client-profile.component.vue";
-import ClientAdd from "./components/pages/client-add.component.vue";
-import ClientDeleteConfirmation from "./components/pages/client-delete-confirmation.component.vue";
+import ClientList from "./Client/pages/client-list.component.vue";
+import ClientProfile from "./Client/pages/client-profile.component.vue";
+import ClientAdd from "./Client/pages/client-add.component.vue";
+import ClientDeleteConfirmation from "./Client/pages/client-delete-confirmation.component.vue";
 
 export default {
   name:'app',

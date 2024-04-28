@@ -15,7 +15,7 @@ export default {
           <div class="column">
             <img
                 loading="lazy"
-                srcSet="src/assets/img/persona1.png"
+                srcSet="../../assets/img/persona1.png"
                 class="img"
             />
           </div>

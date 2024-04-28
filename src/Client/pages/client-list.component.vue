@@ -21,11 +21,11 @@ export default {
                   <div class="div-10">
                     <img
                         loading="lazy"
-                        srcSet="src/assets/img/persona1.png"
+                        srcSet="../../assets/img/persona1.png"
                         class="img"
                     /><img
                       loading="lazy"
-                      srcSet="src/assets/img/persona2.png"
+                      srcSet="../../assets/img/persona2.png"
                       class="img-2"
                   />
                   </div>
@@ -56,11 +56,11 @@ export default {
                   <div class="div-24">
                     <img
                         loading="lazy"
-                        srcSet="src/assets/img/persona3.png"
+                        srcSet="../../assets/img/persona3.png"
                         class="img-3"
                     /><img
                       loading="lazy"
-                      srcSet="src/assets/img/persona4.png"
+                      srcSet="../../assets/img/persona4.png"
                       class="img-4"
                   />
                   </div>
