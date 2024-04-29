@@ -6,12 +6,18 @@ import ClientList from "./Client/pages/client-list.component.vue";
 import ClientProfile from "./Client/pages/client-profile.component.vue";
 import ClientAdd from "./Client/pages/client-add.component.vue";
 import ClientDeleteConfirmation from "./Client/pages/client-delete-confirmation.component.vue";
-
+import SparePart from "./Inventory/pages/automotive/spare-part.vue";
 export default {
   name:'app',
-  components: {ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu}
-}
+  components: {ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu, SparePart},
+  data(){
+    return {
+      spareparts:[],
+      errors: [],
 
+    }
+  }
+}
 </script>
 
 <template>
