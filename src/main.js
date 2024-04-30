@@ -6,6 +6,7 @@ import Button from "primevue/button";
 import SelectButton from "primevue/selectbutton";
 import Avatar from "primevue/avatar";
 import Toolbar from "primevue/toolbar";
+import PrimeVue from "primevue/config";
 
 createApp(App)
     .use(PrimeVue, { ripple: true })
