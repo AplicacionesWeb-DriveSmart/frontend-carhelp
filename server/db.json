@@ -1,4 +1,116 @@
 {
+  "clients": [
+    {
+      "id": 1,
+      "name": "Jose  Corral",
+      "address": "123 Main Street, City",
+      "phone": "123-456-7890",
+      "email": "juan.rodriguez@example.com",
+      "image_url": "https://i.postimg.cc/zGBMZknL/persona1.png",
+      "vehicle": {
+        "plate": "ABC123",
+        "make": "Audi",
+        "model": "A1",
+        "year": 2018,
+        "color": "Gray",
+        "image_url": "https://i.postimg.cc/Qdcrnmsp/Audi-Car.png"
+      },
+      "invoices": [
+        {
+          "number": "F2022001",
+          "issue_date": "2022-04-15",
+          "total": 1500.00,
+          "details": [
+            {
+              "description": "Maintenance service",
+              "amount": 800.00
+            },
+            {
+              "description": "Tire replacement",
+              "amount": 700.00
+            }
+          ]
+        },
+        {
+          "number": "F2022002",
+          "issue_date": "2022-06-20",
+          "total": 1200.00,
+          "details": [
+            {
+              "description": "Oil change",
+              "amount": 100.00
+            },
+            {
+              "description": "New brakes",
+              "amount": 1100.00
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jose Torres Peralta",
+      "address": "456 Central Avenue, City",
+      "phone": "987-654-3210",
+      "email": "jose.torres@example.com",
+      "image_url": "https://i.postimg.cc/GpRX3JDJ/persona2.png",
+      "vehicle": {
+        "plate": "DEF456",
+        "make": "Mitsubishi",
+        "model": "New Ask",
+        "year": 2019,
+        "color": "Blue",
+        "image_url": "https://i.postimg.cc/ZRR2Zxks/Mitsubishi-Car.png"
+      },
+      "invoices": [
+        {
+          "number": "F2022003",
+          "issue_date": "2022-07-10",
+          "total": 800.00,
+          "details": [
+            {
+              "description": "Engine repair",
+              "amount": 800.00
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Jose Rodriguez Benavides",
+      "address": "789 Liberty Avenue, City",
+      "phone": "555-123-4567",
+      "email": "jose.benavides@example.com",
+      "image_url": "https://i.postimg.cc/W4pf6w4p/persona3.png",
+      "vehicle": {
+        "plate": "GHI789",
+        "make": "Volkswagen",
+        "model": "Nivus",
+        "year": 2021,
+        "color": "White",
+        "image_url": "https://i.postimg.cc/sfZyhs86/Volkwagen-Car.png"
+      },
+      "invoices": [
+        {
+          "number": "F2022004",
+          "issue_date": "2022-08-05",
+          "total": 600.00,
+          "details": [
+            {
+              "description": "Oil change",
+              "amount": 50.00
+            },
+            {
+              "description": "General inspection",
+              "amount": 550.00
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "spare-parts": [
     {
       "id": 1,

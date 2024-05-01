@@ -26,7 +26,6 @@ export default {
         { label: "Configuration"},
         { label: "Support"},
         { label: "Plans"},
-
       ]
     }
   }
