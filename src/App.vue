@@ -45,29 +45,10 @@ export default {
         ></pv-button>
         <h3>CarHelp</h3>
       </template>
-      <template #end>
-        <div class="flex-column">
-          <router-link
-              v-for="item in items"
-              :to="item.to"
-              custom
-              v-slot="{ navigate, href }"
-              :key="item.label"
-          >
-            <pv-button
-                class="p-button-text text-white"
-                :href="href"
-                @click="navigate"
-            >
-              {{ item.label }}
-            </pv-button>
-          </router-link>
-        </div>
-      </template>
     </pv-toolbar>
   </div>
-
   <pv-sidebar v-model:visible="drawer">
+    <img src="">
     <div class="sidebar-items">
       <router-link
           v-for="item in items"
@@ -91,24 +72,11 @@ export default {
 </template>
 
 <style scoped>
-.sidebar-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 240px; /* Ancho del sidebar */
-  background-color: #f0f0f0;
-  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  overflow-y: auto;
-}
-
 .sidebar-items {
   display: flex;
   flex-direction: column;
   padding: 20px; /* Espaciado interno */
 }
-
 .sidebar-item {
   margin-bottom: 10px; /* Espaciado entre ítems */
 }
