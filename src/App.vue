@@ -15,7 +15,7 @@ export default {
     ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu, SparePart},
   data() {
     return {
-      drawer: true,
+      drawer: false,
       items: [
         { label: "Home", to: "/home" },
         { label: "Client"},
@@ -27,6 +27,12 @@ export default {
         { label: "Support"},
         { label: "Plans"},
       ]
+    }
+  },
+  methods: {
+    handleSidebarItemClick(navigate, item) {
+      navigate();
+      this.drawer = false;
     }
   }
 }
@@ -47,7 +53,7 @@ export default {
     </pv-toolbar>
   </div>
   <pv-sidebar v-model:visible="drawer">
-    <img src="">
+    <img src="/public/logo.jpg" width="100px">
     <div class="sidebar-items">
       <router-link
           v-for="item in items"
@@ -59,7 +65,7 @@ export default {
         <pv-button
             class="p-button-text black sidebar-item"
             :href="href"
-            @click="navigate"
+            @click="handleSidebarItemClick(navigate, item)"
         >
           {{ item.label }}
         </pv-button>

@@ -31,6 +31,7 @@ export default {
 }
 </script>
 <template>
+  <h1 style="color:white;">Products Catalog</h1>
   <div v-for="sparepart in spareparts">
     <spare-part-card :sparepart="sparepart"></spare-part-card>
     <hr>
