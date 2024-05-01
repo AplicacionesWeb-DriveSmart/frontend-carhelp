@@ -1,15 +1,17 @@
 <template>
   <div class="div-1">
     <div v-for="client in clients" :key="client.id">
-        <v-card class="client-card">
-          <img :src="client.image_url" alt="Client Image" style="width: 200px; height: 200px; margin-left: 10px; margin-top: 10px;">
-          <div class="client-avatar"></div>
-          <div>Name: {{ client.name }}</div>
-          <div class="client-card-action">
-            <pv-button @click="edit(client.id)">Edit</pv-button>
-            <pv-button @click="delete(client.id)">Delete</pv-button>
-          </div>
-        </v-card>
+      <v-card class="client-card">
+        <img :src="client.image_url" alt="Client Image" style="width: 200px; height: 200px; margin-left: 10px; margin-top: 10px;">
+        <div class="client-avatar"></div>
+        <div>Name: {{ client.name }}</div>
+        <div class="client-card-action">
+          <router-link :to="{ name: 'profile', params: { id: client.id } }">
+            <button>Edit</button>
+          </router-link>
+          <button @click="delete(client.id)">Delete</button>
+        </div>
+      </v-card>
     </div>
   </div>
 </template>
