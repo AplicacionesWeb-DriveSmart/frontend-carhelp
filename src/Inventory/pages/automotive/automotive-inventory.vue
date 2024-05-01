@@ -31,7 +31,10 @@ export default {
 }
 </script>
 <template>
-  <h1 style="color:white;">Products Catalog</h1>
+  <div class="header-container">
+    <h1 class="title">Products Catalog</h1>
+    <pv-button label="Register new product"></pv-button>
+  </div>
   <div v-for="sparepart in spareparts">
     <spare-part-card :sparepart="sparepart"></spare-part-card>
     <hr>
@@ -39,4 +42,17 @@ export default {
   </div>
 </template>
 <style>
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.title {
+  color: white;
+  margin: 0;
+}
+pv-button {
+  margin-left: auto;
+}
 </style>

@@ -23,7 +23,6 @@ import Card from "primevue/card";
 import PrimeVue from "primevue/config";
 import ToastService from "primevue/toastservice";
 
-
 createApp(App)
     .use(router)
     .use(PrimeVue, { ripple: true })
