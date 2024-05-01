@@ -1,3 +1,40 @@
 {
+  "spare-parts": [
+    {
+      "id": 1,
+      "name": "a",
+      "description": "bla",
+      "price": "300",
+      "quantity": "2",
+      "image": "xxxxxxx"
 
+    },
+    {
+      "id": 2,
+      "name": "b",
+      "description": "bla",
+      "price": "300",
+      "quantity": "2",
+      "image": "xxxxxxx"
+
+    },
+    {
+      "id": 3,
+      "name": "c",
+      "description": "bla",
+      "price": "300",
+      "quantity": "2",
+      "image": "xxxxxxx"
+
+    },
+    {
+      "id": 4,
+      "name": "d",
+      "description": "bla",
+      "price": "300",
+      "quantity": "2",
+      "image": "xxxxxxx"
+
+    }
+  ]
 }

@@ -7,21 +7,45 @@ import ClientProfile from "./Client/pages/client-profile.component.vue";
 import ClientAdd from "./Client/pages/client-add.component.vue";
 import ClientDeleteConfirmation from "./Client/pages/client-delete-confirmation.component.vue";
 import SparePart from "./Inventory/pages/automotive/spare-part.vue";
+import {InventoryService} from "./carhelp/services/inventory.service.js";
+import InventoryContent from "./Inventory/pages/automotive/automotive-inventory.vue";
 export default {
   name:'app',
-  components: {ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu, SparePart},
-  data(){
+  components: {
+    InventoryContent,
+    ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu, SparePart},
+  data() {
     return {
       spareparts:[],
       errors: [],
-
+      inventoryService: new InventoryService()
     }
+  },
+  created() {
+    this.getSpareParts();
+  },
+  methods: {
+    getSpareParts() {
+      this.inventoryService.getAll()
+          .then(response => {
+            this.spareparts = response.data
+            console.log(response.data)
+          })
+          .catch(e => {
+            this.errors.push(e);
+          });
+    },
   }
 }
 </script>
 
 <template>
- <ClientDeleteConfirmation></ClientDeleteConfirmation>
+  <div class="w-full">
+    <div>
+      <h2>Inventory</h2>
+      <inventory-content v-if="errors" :spareparts="spareparts"></inventory-content>
+    </div>
+  </div>
 </template>
 
 <style scoped>

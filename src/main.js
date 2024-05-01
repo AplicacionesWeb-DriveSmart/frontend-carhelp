@@ -7,8 +7,10 @@ import SelectButton from "primevue/selectbutton";
 import Avatar from "primevue/avatar";
 import Toolbar from "primevue/toolbar";
 import PrimeVue from "primevue/config";
+import ToastService from "primevue/toastservice";
 
 createApp(App)
+    .use(ToastService)
     .use(PrimeVue, { ripple: true })
     .component('pv-card', Card)
     .component('pv-button', Button)
