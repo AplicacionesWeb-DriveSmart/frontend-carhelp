@@ -18,6 +18,21 @@ const router = createRouter({
             name: "inventory",
             component: () => import("../Inventory/pages/automotive/automotive-inventory.vue"),
         },
+        {
+            path: "/client",
+            name: "client",
+            component: () => import("../Client/pages/client-list.component.vue"),
+        },
+        {
+            path: "/profile/:id",
+            name: "profile",
+            component: () => import("../Client/pages/client-profile.component.vue"),
+        },
+        {
+            path: "/delete/:id",
+            name: "delete",
+            component: () => import("../Client/pages/client-delete-confirmation.component.vue"),
+        }
     ]
 })
 

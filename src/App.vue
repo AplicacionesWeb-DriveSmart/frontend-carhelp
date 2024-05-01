@@ -18,7 +18,7 @@ export default {
       drawer: false,
       items: [
         { label: "Home", to: "/home" },
-        { label: "Client"},
+        { label: "Client", to: "/client"},
         { label: "Vehicles"},
         { label: 'Inventory', to: '/inventory' },
         { label: "Chats"},
