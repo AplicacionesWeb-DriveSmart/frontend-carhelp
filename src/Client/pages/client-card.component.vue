@@ -9,7 +9,9 @@
           <router-link :to="{ name: 'profile', params: { id: client.id } }">
             <button>Edit</button>
           </router-link>
-          <button @click="delete(client.id)">Delete</button>
+          <router-link :to="{ name: 'delete', params: { id: client.id }}">
+            <button>Delete</button>
+          </router-link>
         </div>
       </v-card>
     </div>
@@ -25,7 +27,7 @@ export default {
     edit(clientId) {
       this.$router.push({ name: 'profile', params: { id: clientId } });
     },
-    delete(clientId) {
+    Delete(clientId) {
       this.$router.push({ name: 'delete', params: { id: clientId } });
     }
   }

@@ -1,30 +1,49 @@
 <script>
+import {ClientService} from "../../carhelp/services/client.service";
 export default {
-  name: 'ClientDelete',
+  data() {
+    return {
+      client: null,
+      clientService: null
+    };
+  },
+  created() {
+    this.clientService = new ClientService();
+    const clientId = this.$route.params.id;
+    this.clientService.getById(clientId).then(response => {
+      this.client = response.data;
+    });
+  },
+  methods: {
+    onCancel() {
+      this.$router.go(-1);
+    }
+  }
 }
 </script>
 <template>
-  <div class="div">
-    <div class="div-2">
-      <div class="div-3">
-        <div class="div-4">Are you sure you want to delete the client?</div>
-        <div class="div-5">
-          <div class="div-6">
-            <div class="column">
-              <div class="div-7">
-                <div class="div-8">
-                  <div class="textbox">Name: Jose</div>
-                  <div class="textbox2">Last name: Rodriguez Corral</div>
+  <div v-if="client">
+    <div class="div">
+      <div class="div-2">
+        <div class="div-3">
+          <div class="div-4">Are you sure you want to delete the client?</div>
+          <div class="div-5">
+            <div class="div-6">
+              <div class="column">
+                <div class="div-7">
+                  <div class="div-8">
+                    <div class="textbox">Name: {{client.name}}</div>
+                    <div class="textbox2">Phone: {{client.phone}}</div>
+                  </div>
+                  <div class="div-9"><button>Confirm</button></div>
                 </div>
-                <div class="div-9"><button>Confirm</button></div>
               </div>
-            </div>
-            <div class="column-2">
-              <div class="div-10">
-
-                <div class="textbox">E-mail: jose@gmail.com</div>
-                <div class="textbox2">Automotive: AutoVip</div>
-                <div class="div-11"><button>Cancel</button></div>
+              <div class="column-2">
+                <div class="div-10">
+                  <div class="textbox">E-mail: {{ client.email }}</div>
+                  <div class="textbox2">Address: {{client.address}}</div>
+                  <div class="div-11"><button @click="onCancel">Cancel</button></div>
+                </div>
               </div>
             </div>
           </div>
@@ -33,8 +52,6 @@ export default {
     </div>
   </div>
 </template>
-
-
 
 <style scoped>
 .div {
