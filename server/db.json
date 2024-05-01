@@ -118,7 +118,7 @@
       "description": "bla",
       "price": "300",
       "quantity": "2",
-      "image": "xxxxxxx"
+      "image": "https://i.postimg.cc/zfPLzmJ8/tire.png"
 
     },
     {
@@ -127,7 +127,7 @@
       "description": "bla",
       "price": "300",
       "quantity": "2",
-      "image": "xxxxxxx"
+      "image": "https://i.postimg.cc/TYLvSZsn/oil-filter.jpg"
 
     },
     {
@@ -136,7 +136,7 @@
       "description": "bla",
       "price": "300",
       "quantity": "2",
-      "image": "xxxxxxx"
+      "image": "https://i.postimg.cc/V6CH48vN/disc.jpg"
 
     },
     {
@@ -145,7 +145,7 @@
       "description": "bla",
       "price": "300",
       "quantity": "2",
-      "image": "xxxxxxx"
+      "image": "https://i.postimg.cc/yxf9ZJK3/set.jpg"
 
     }
   ]
