@@ -15,10 +15,18 @@ export default {
     ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu, SparePart},
   data() {
     return {
-      drawer: false,
+      drawer: true,
       items: [
         { label: "Home", to: "/home" },
-        { label: 'Inventory', to: '/inventory' }
+        { label: "Client"},
+        { label: "Vehicles"},
+        { label: 'Inventory', to: '/inventory' },
+        { label: "Chats"},
+        { label: "Invoice"},
+        { label: "Configuration"},
+        { label: "Support"},
+        { label: "Plans"},
+
       ]
     }
   }
@@ -26,8 +34,8 @@ export default {
 </script>
 
 <template>
-  <pv-toast></pv-toast>
-  <header>
+  <div>
+    <pv-toast />
     <pv-toolbar class="bg-primary">
       <template #start>
         <pv-button
@@ -46,31 +54,62 @@ export default {
               v-slot="{ navigate, href }"
               :key="item.label"
           >
-            <pv-button class="p-button-text text-white"
-                       :href="href"
-                       @click="navigate">
+            <pv-button
+                class="p-button-text text-white"
+                :href="href"
+                @click="navigate"
+            >
               {{ item.label }}
             </pv-button>
           </router-link>
         </div>
       </template>
     </pv-toolbar>
-  </header>
-  <pv-sidebar v-model:visible="drawer"> </pv-sidebar>
+  </div>
+
+  <pv-sidebar v-model:visible="drawer">
+    <div class="sidebar-items">
+      <router-link
+          v-for="item in items"
+          :to="item.to"
+          custom
+          v-slot="{ navigate, href }"
+          :key="item.label"
+      >
+        <pv-button
+            class="p-button-text black sidebar-item"
+            :href="href"
+            @click="navigate"
+        >
+          {{ item.label }}
+        </pv-button>
+      </router-link>
+    </div>
+  </pv-sidebar>
+
   <RouterView />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px; /* Ancho del sidebar */
+  background-color: #f0f0f0;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Espaciado interno */
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.sidebar-item {
+  margin-bottom: 10px; /* Espaciado entre ítems */
 }
 </style>
