@@ -1,12 +1,32 @@
 <script>
 import SparePart from "../../model/spare-part.entity.js";
 import SparePartCard from "./spare-part.vue";
+import {InventoryService} from "../../../carhelp/services/inventory.service.js";
 
 export default {
   name: "inventory-content",
   components: {SparePartCard, SparePart},
-  props: {
-    spareparts: Array
+  data() {
+    return {
+      spareparts:[],
+      errors: [],
+      inventoryService: new InventoryService()
+    }
+  },
+  created() {
+    this.getSpareParts();
+  },
+  methods: {
+    getSpareParts() {
+      this.inventoryService.getAll()
+          .then(response => {
+            this.spareparts = response.data
+            console.log(response.data)
+          })
+          .catch(e => {
+            this.errors.push(e);
+          });
+    },
   }
 }
 </script>

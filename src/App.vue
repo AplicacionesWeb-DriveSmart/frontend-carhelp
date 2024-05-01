@@ -7,7 +7,6 @@ import ClientProfile from "./Client/pages/client-profile.component.vue";
 import ClientAdd from "./Client/pages/client-add.component.vue";
 import ClientDeleteConfirmation from "./Client/pages/client-delete-confirmation.component.vue";
 import SparePart from "./Inventory/pages/automotive/spare-part.vue";
-import {InventoryService} from "./carhelp/services/inventory.service.js";
 import InventoryContent from "./Inventory/pages/automotive/automotive-inventory.vue";
 export default {
   name:'app',
@@ -16,36 +15,49 @@ export default {
     ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu, SparePart},
   data() {
     return {
-      spareparts:[],
-      errors: [],
-      inventoryService: new InventoryService()
+      drawer: false,
+      items: [
+        { label: "Home", to: "/home" },
+        { label: 'Inventory', to: '/inventory' }
+      ]
     }
-  },
-  created() {
-    this.getSpareParts();
-  },
-  methods: {
-    getSpareParts() {
-      this.inventoryService.getAll()
-          .then(response => {
-            this.spareparts = response.data
-            console.log(response.data)
-          })
-          .catch(e => {
-            this.errors.push(e);
-          });
-    },
   }
 }
 </script>
 
 <template>
-  <div class="w-full">
-    <div>
-      <h2>Inventory</h2>
-      <inventory-content v-if="errors" :spareparts="spareparts"></inventory-content>
-    </div>
-  </div>
+  <pv-toast></pv-toast>
+  <header>
+    <pv-toolbar class="bg-primary">
+      <template #start>
+        <pv-button
+            class="p-button-text text-white"
+            icon="pi pi-bars"
+            @click="drawer = !drawer"
+        ></pv-button>
+        <h3>CarHelp</h3>
+      </template>
+      <template #end>
+        <div class="flex-column">
+          <router-link
+              v-for="item in items"
+              :to="item.to"
+              custom
+              v-slot="{ navigate, href }"
+              :key="item.label"
+          >
+            <pv-button class="p-button-text text-white"
+                       :href="href"
+                       @click="navigate">
+              {{ item.label }}
+            </pv-button>
+          </router-link>
+        </div>
+      </template>
+    </pv-toolbar>
+  </header>
+  <pv-sidebar v-model:visible="drawer"> </pv-sidebar>
+  <RouterView />
 </template>
 
 <style scoped>
