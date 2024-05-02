@@ -35,9 +35,15 @@
     <div class="info-container">
       <div class="pv-card-info-container">
         <p>Support</p>
-        <div>
-          <img class="info-phone-image" src="https://cdn-user-icons.flaticon.com/40884/40884761/1714628751866.svg?token=exp=1714629652~hmac=11703a40f37bb7720854f5e0bf98155f">
-
+        <div class="info-contact">
+          <div class="info-contact-phone">
+            <img class="info-phone-image" src="https://cdn-user-icons.flaticon.com/40884/40884761/1714628751866.svg?token=exp=1714629652~hmac=11703a40f37bb7720854f5e0bf98155f">
+            <h1>+51-929292</h1>
+          </div>
+          <div class="info-contact-mail">
+            <img class="info-mail-image" src="https://cdn-user-icons.flaticon.com/40884/40884761/1714629436364.svg?token=exp=1714630337~hmac=e14ae37e0ebc47aab3ea794aa34d5332">
+            <h1>soportevip@gmail.com</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -48,6 +54,7 @@
 .general-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 .query-container {
   grid-column: 1/2;
@@ -58,19 +65,22 @@
 .pv-card-info-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 90%;
   height: 400px;
   font-family: Roboto Mono, monospace;
-  background-color: red;
+  background-color: transparent;
   color: #FFFFFF;
   margin: 50px;
   border: none;
   outline: none;
 }
 .pv-card-info-container p {
-  font-size: xxx-large;
+  font-size: 72px;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-bottom: 15px;
 }
 .pv-card-query-container {
   width: 90%;
@@ -146,5 +156,18 @@ p{
   color: black;
   border-radius: 12px;
   cursor: pointer;
+}
+.info-contact{
+  display: flex;
+  flex-direction: column;
+  margin-top:0;
+}
+.info-phone-image, .info-mail-image {
+  width: 50px;
+  margin-right: 10px;
+}
+.info-contact-phone, .info-contact-mail{
+  display: flex;
+  font-size: large;
 }
 </style>
