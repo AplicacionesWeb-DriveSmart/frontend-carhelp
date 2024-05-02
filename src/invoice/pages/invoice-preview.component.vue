@@ -27,7 +27,7 @@ export default {
       // Aquí deberías implementar la lógica para calcular el total
     },
     onCancel() {
-      // Aquí deberías implementar la lógica para manejar el evento de cancelación
+      this.$router.go(-1);
     }
   }
 };
