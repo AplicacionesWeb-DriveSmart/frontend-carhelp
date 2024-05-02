@@ -26,7 +26,7 @@ export default {
           })
     },
     getClients() {
-      this.clientService.getAll()
+      this.invoiceServices.getAll()
           .then(response => {
             this.clients = response.data
             console.log(response.data)
@@ -51,7 +51,7 @@ export default {
         <p>{{ invoice.issue_date }}</p>
         <p>S/.{{ invoice.total }}</p>
         <p>Paid</p>
-        <button @click="preview('1',invoice.number)">Ver</button>
+        <button @click="preview(client.id,invoice.number)">Ver</button>
       </div>
 </div>
 
