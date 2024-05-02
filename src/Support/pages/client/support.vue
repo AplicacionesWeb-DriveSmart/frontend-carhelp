@@ -37,11 +37,11 @@
         <p>Support</p>
         <div class="info-contact">
           <div class="info-contact-phone">
-            <img class="info-phone-image" src="https://cdn-user-icons.flaticon.com/40884/40884761/1714628751866.svg?token=exp=1714629652~hmac=11703a40f37bb7720854f5e0bf98155f">
+            <img class="info-phone-image" src="https://cdn-user-icons.flaticon.com/40884/40884761/1714628751866.svg?token=exp=1714629652~hmac=11703a40f37bb7720854f5e0bf98155f" alt="Phone icon">
             <h1>+51-929292</h1>
           </div>
           <div class="info-contact-mail">
-            <img class="info-mail-image" src="https://cdn-user-icons.flaticon.com/40884/40884761/1714629436364.svg?token=exp=1714630337~hmac=e14ae37e0ebc47aab3ea794aa34d5332">
+            <img class="info-mail-image" src="https://cdn-user-icons.flaticon.com/40884/40884761/1714629436364.svg?token=exp=1714630337~hmac=e14ae37e0ebc47aab3ea794aa34d5332" alt="Mail-icon">
             <h1>soportevip@gmail.com</h1>
           </div>
         </div>
