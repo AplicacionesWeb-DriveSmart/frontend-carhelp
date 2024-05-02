@@ -21,7 +21,7 @@ export default {
         </div>
         <h1>Name: {{ sparepart.name }}</h1>
         <pv-button label="MORE" @click="drawer = true" class="more" ></pv-button>
-        <pv-dialog v-model:visible="drawer">
+        <pv-dialog v-model:visible="drawer" modal>
           <pv-card>
             <template #content>
               <div class="spare-part-card2">
