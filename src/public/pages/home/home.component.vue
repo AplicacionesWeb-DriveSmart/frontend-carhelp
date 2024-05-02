@@ -27,7 +27,7 @@
         </div>
         <div class="content-information-home">
           <div class="information-home">
-            <p>Welcome to AutoPro Tracker</p>
+            <p>Welcome to Car Help</p>
           </div>
         </div>
       </div>

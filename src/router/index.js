@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeComponent from '../carhelp/pages/home.component.vue'
 import Support from "../Support/pages/client/support.vue";
+import Plans from "../Plans/pages/client/plans.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
             path:"/support",
             name: "support",
             component: Support,
+        },
+        {
+            path: '/plans',
+            name: 'plans',
+            component: Plans,
         },
         {
             path: "/profile/:id",

@@ -169,5 +169,6 @@ p{
 .info-contact-phone, .info-contact-mail{
   display: flex;
   font-size: large;
+  font-family: Roboto Mono, monospace;
 }
 </style>

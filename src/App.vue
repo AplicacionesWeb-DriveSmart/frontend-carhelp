@@ -6,13 +6,10 @@ import ClientList from "./Client/pages/client-list.component.vue";
 import ClientProfile from "./Client/pages/client-profile.component.vue";
 import ClientAdd from "./Client/pages/client-add.component.vue";
 import ClientDeleteConfirmation from "./Client/pages/client-delete-confirmation.component.vue";
-import SparePart from "./Inventory/pages/automotive/spare-part.vue";
-import InventoryContent from "./Inventory/pages/automotive/automotive-inventory.vue";
 export default {
   name:'app',
   components: {
-    InventoryContent,
-    ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu, SparePart},
+    ClientList, ClientProfile, ClientAdd, ClientDeleteConfirmation, Register, LoginForm, Menu},
   data() {
     return {
       drawer: false,
@@ -25,7 +22,7 @@ export default {
         { label: "Invoice", to: "/invoices"},
         { label: "Configuration"},
         { label: "Support", to: "/support"},
-        { label: "Plans"},
+        { label: "Plans", to: "/plans"},
       ]
     }
   },
