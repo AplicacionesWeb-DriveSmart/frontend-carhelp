@@ -33,15 +33,22 @@ export default {
 <template>
   <div class="header-container">
     <h1 class="title">Products Catalog</h1>
-    <pv-button label="Register new product"></pv-button>
   </div>
-  <div v-for="sparepart in spareparts">
-    <spare-part-card :sparepart="sparepart"></spare-part-card>
-    <hr>
-    <hr>
+  <div class="spareparts-container">
+    <!-- Bucle v-for para mostrar las tarjetas en la cuadrícula -->
+    <div v-for="sparepart in spareparts" :key="sparepart.id">
+      <spare-part-card :sparepart="sparepart"></spare-part-card>
+    </div>
   </div>
 </template>
+
 <style>
+/* Establecer una cuadrícula con 4 columnas */
+.spareparts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas iguales */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -51,8 +58,5 @@ export default {
 .title {
   color: white;
   margin: 0;
-}
-pv-button {
-  margin-left: auto;
 }
 </style>
