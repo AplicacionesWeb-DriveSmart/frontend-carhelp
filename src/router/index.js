@@ -32,6 +32,11 @@ const router = createRouter({
             path: "/delete/:id",
             name: "delete",
             component: () => import("../Client/pages/client-delete-confirmation.component.vue"),
+        },
+        {
+            path: "/add",
+            name: "add",
+            component: () => import("../Client/pages/client-add.component.vue"),
         }
     ]
 })

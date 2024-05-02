@@ -1,37 +1,51 @@
 <script>
 export default {
-  name: 'ClientAdd',
+  data() {
+    return {
+      name: '',
+      lastname: '',
+      automotive: ''
+    };
+  },
+  methods: {
+    search() {
+      // Aquí va tu lógica para buscar el cliente
+    },
+    addClient() {
+      // Aquí va tu lógica para agregar el cliente
+    },
+    onCancel() {
+      this.$router.go(-1);
+    }
+  }
 }
 </script>
+
 <template>
   <div class="div">
     <div class="div-2">
       <div class="div-3">New client</div>
       <div class="div-4">
-        <input type="text" id="nombre" name="nombre" placeholder="Account name">
+        <input type="text" id="name" name="name" placeholder="Account name" v-model="name">
       </div>
       <div class="div-5">
-        <input type="text" id="nombre" name="nombre" placeholder="Account last name">
+        <input type="text" id="lastname" name="lastname" placeholder="Account last name" v-model="lastname">
       </div>
-      <div class="div-6"><button>Search</button></div>
+      <div class="div-6"><button @click="search">Search</button></div>
       <div class="div-7">
         <div class="div-8">Account found</div>
-        <img
-            loading="lazy"
-            srcSet="/src/assets/img/check.png"
-            class="img"
-        />
       </div>
-      <div class="div-9">Chosen account: Jose Rodriguez Corral</div>
+      <div class="div-9">Chosen account: Not selected yet</div>
       <div class="div-10">
-        <input type="text" id="nombre" name="nombre" placeholder="Automotive">
+        <input type="text" id="automotive" name="automotive" placeholder="Automotive" v-model="automotive">
       </div>
-      <div class="div-11"><button>Add client</button></div>
+      <div class="div-11">
+        <div class="div-12"><button @click="addClient">Add client</button></div>
+        <div class="div-13"><button @click="onCancel">Cancel</button></div>
+      </div>
     </div>
   </div>
 </template>
-
-
 
 <style scoped>
 .div {
@@ -134,12 +148,6 @@ export default {
   flex-basis: auto;
   margin: auto 0;
 }
-.img {
-  aspect-ratio: 1.2;
-  object-fit: auto;
-  object-position: center;
-  width: 46px;
-}
 .div-9 {
   font-family: Roboto Mono, sans-serif;
   font-size: 16px;
@@ -178,13 +186,22 @@ export default {
   }
 }
 
+.div-11{
+  display: flex;
+}
+
 @media (max-width: 991px) {
-  .div-11 {
+  .div-12 {
     margin-left: 9px;
     padding: 0 20px;
   }
 }
-
+@media (max-width: 991px) {
+  .div-13 {
+    margin-left: 9px;
+    padding: 0 20px;
+  }
+}
 button {
   margin-top: 24px;
   margin-left: 19px;
