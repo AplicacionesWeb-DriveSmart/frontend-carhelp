@@ -10,7 +10,7 @@ export default {
   <div class="card-container-horizontal">
     <img :src="vehicle.image" alt="vehicle image">
     <div class="cards">
-      <pv-card>
+      <pv-card class="bc">
         <template #content>
           <p>Plate: {{vehicle.plate}}</p>
           <p>Vehicle brand: {{vehicle.brand}}</p>
@@ -33,7 +33,7 @@ export default {
 .card-container-horizontal img{
   transform: translateX(50%);
   width: 70%;
-  height: 30%;
+  height: 50%;
   margin-top: 25px;
 }
 
@@ -44,6 +44,10 @@ export default {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   margin: auto;
+}
+
+.bc{
+  background-color: #B2C3D3;
 }
 
 </style>
