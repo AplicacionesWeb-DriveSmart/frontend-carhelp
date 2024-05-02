@@ -8,7 +8,7 @@ export default {
   components: {SparePartCard, SparePart},
   data() {
     return {
-      spareparts:[],
+      spareparts: [],
       errors: [],
       inventoryService: new InventoryService()
     }
