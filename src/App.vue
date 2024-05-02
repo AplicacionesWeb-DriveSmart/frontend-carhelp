@@ -22,7 +22,7 @@ export default {
         { label: "Vehicles"},
         { label: 'Inventory', to: '/inventory' },
         { label: "Chats"},
-        { label: "Invoice"},
+        { label: "Invoice", to: "/invoices"},
         { label: "Configuration"},
         { label: "Support"},
         { label: "Plans"},
