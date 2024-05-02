@@ -9,11 +9,11 @@
       "image_url": "https://i.postimg.cc/zGBMZknL/persona1.png",
       "vehicle": {
         "plate": "ABC123",
-        "make": "Audi",
+        "brand": "Audi",
         "model": "A1",
         "year": 2018,
         "color": "Gray",
-        "image_url": "https://i.postimg.cc/Qdcrnmsp/Audi-Car.png"
+        "image": "https://i.postimg.cc/Qdcrnmsp/Audi-Car.png"
       },
       "invoices": [
         {
@@ -57,11 +57,11 @@
       "image_url": "https://i.postimg.cc/GpRX3JDJ/persona2.png",
       "vehicle": {
         "plate": "DEF456",
-        "make": "Mitsubishi",
+        "brand": "Mitsubishi",
         "model": "New Ask",
         "year": 2019,
         "color": "Blue",
-        "image_url": "https://i.postimg.cc/ZRR2Zxks/Mitsubishi-Car.png"
+        "image": "https://i.postimg.cc/ZRR2Zxks/Mitsubishi-Car.png"
       },
       "invoices": [
         {
@@ -86,11 +86,11 @@
       "image_url": "https://i.postimg.cc/W4pf6w4p/persona3.png",
       "vehicle": {
         "plate": "GHI789",
-        "make": "Volkswagen",
+        "brand": "Volkswagen",
         "model": "Nivus",
         "year": 2021,
         "color": "White",
-        "image_url": "https://i.postimg.cc/sfZyhs86/Volkwagen-Car.png"
+        "image": "https://i.postimg.cc/sfZyhs86/Volkwagen-Car.png"
       },
       "invoices": [
         {
