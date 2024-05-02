@@ -16,7 +16,9 @@ export default {
   <pv-card>
     <template #content>
       <div class="spare-part-card">
-        <img :src="sparepart.image" alt="spare-part image" width="300px">
+        <div class="image-container">
+          <img :src="sparepart.image" alt="spare-part image" width="300px">
+        </div>
         <h1>Name: {{ sparepart.name }}</h1>
         <pv-button label="MORE" @click="drawer = true" class="more" ></pv-button>
         <pv-dialog v-model:visible="drawer">
@@ -51,7 +53,16 @@ export default {
 .spare-part-card {
   background-color: gray;
   padding: 20px;
-  max-width: 500px;
+  width: 100%; /* Ocupar todo el ancho de la columna */
+  max-width: 100%; /* Ajustar el ancho máximo para adaptarse al contenedor */
+  height: 500px; /* Altura fija para las tarjetas */
+  box-sizing: border-box; /* Incluir el padding dentro del tamaño total */
+  border: 1px solid #ddd; /* Borde para resaltar las tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Ocultar el contenido que exceda la altura fija */
+}
+.image-container {
+  height: 300px;
 }
 .spare-part-card2 {
   background-color: gray;
@@ -65,6 +76,7 @@ export default {
   }
   .spare-part-card img {
     max-width: 100%;
+    max-height: 100%;
   }
 }
 </style>

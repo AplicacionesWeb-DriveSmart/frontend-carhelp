@@ -114,7 +114,7 @@
   "spare-parts": [
     {
       "id": 1,
-      "name": "a",
+      "name": "Product A",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta pellentesque egestas. Ut vestibulum commodo odio, at vestibulum arcu fringilla sit amet. Donec eu diam sodales libero tempor varius sit amet eu ipsum. Ut gravida porta dui, vitae finibus erat auctor ut. Vestibulum consectetur ipsum massa, a dapibus risus ullamcorper ut. Pellentesque a leo lorem. Vivamus egestas arcu vitae nulla fringilla, vitae lacinia libero viverra. Maecenas nec lorem porta, rutrum urna sit amet, ultricies augue. Proin aliquam, nulla sed convallis bibendum, nisl ipsum euismod turpis, nec pretium mauris ligula in ex. Etiam molestie leo sit amet ligula luctus lacinia. Vestibulum eget risus venenatis ipsum dapibus tempor in ac quam. Pellentesque scelerisque et nunc vitae porttitor. Etiam venenatis sed ligula vel pulvinar. Vestibulum mollis purus rutrum odio dictum, vel facilisis elit faucibus. Aenean auctor a ligula id elementum.",
       "price": "300",
       "quantity": "2",
@@ -123,7 +123,7 @@
     },
     {
       "id": 2,
-      "name": "b",
+      "name": "Product B",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta pellentesque egestas. Ut vestibulum commodo odio, at vestibulum arcu fringilla sit amet. Donec eu diam sodales libero tempor varius sit amet eu ipsum. Ut gravida porta dui, vitae finibus erat auctor ut. Vestibulum consectetur ipsum massa, a dapibus risus ullamcorper ut. Pellentesque a leo lorem. Vivamus egestas arcu vitae nulla fringilla, vitae lacinia libero viverra. Maecenas nec lorem porta, rutrum urna sit amet, ultricies augue. Proin aliquam, nulla sed convallis bibendum, nisl ipsum euismod turpis, nec pretium mauris ligula in ex. Etiam molestie leo sit amet ligula luctus lacinia. Vestibulum eget risus venenatis ipsum dapibus tempor in ac quam. Pellentesque scelerisque et nunc vitae porttitor. Etiam venenatis sed ligula vel pulvinar. Vestibulum mollis purus rutrum odio dictum, vel facilisis elit faucibus. Aenean auctor a ligula id elementum.",
       "price": "300",
       "quantity": "2",
@@ -132,7 +132,7 @@
     },
     {
       "id": 3,
-      "name": "c",
+      "name": "Product C",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta pellentesque egestas. Ut vestibulum commodo odio, at vestibulum arcu fringilla sit amet. Donec eu diam sodales libero tempor varius sit amet eu ipsum. Ut gravida porta dui, vitae finibus erat auctor ut. Vestibulum consectetur ipsum massa, a dapibus risus ullamcorper ut. Pellentesque a leo lorem. Vivamus egestas arcu vitae nulla fringilla, vitae lacinia libero viverra. Maecenas nec lorem porta, rutrum urna sit amet, ultricies augue. Proin aliquam, nulla sed convallis bibendum, nisl ipsum euismod turpis, nec pretium mauris ligula in ex. Etiam molestie leo sit amet ligula luctus lacinia. Vestibulum eget risus venenatis ipsum dapibus tempor in ac quam. Pellentesque scelerisque et nunc vitae porttitor. Etiam venenatis sed ligula vel pulvinar. Vestibulum mollis purus rutrum odio dictum, vel facilisis elit faucibus. Aenean auctor a ligula id elementum.",
       "price": "300",
       "quantity": "2",
@@ -141,12 +141,76 @@
     },
     {
       "id": 4,
-      "name": "d",
+      "name": "Product D",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta pellentesque egestas. Ut vestibulum commodo odio, at vestibulum arcu fringilla sit amet. Donec eu diam sodales libero tempor varius sit amet eu ipsum. Ut gravida porta dui, vitae finibus erat auctor ut. Vestibulum consectetur ipsum massa, a dapibus risus ullamcorper ut. Pellentesque a leo lorem. Vivamus egestas arcu vitae nulla fringilla, vitae lacinia libero viverra. Maecenas nec lorem porta, rutrum urna sit amet, ultricies augue. Proin aliquam, nulla sed convallis bibendum, nisl ipsum euismod turpis, nec pretium mauris ligula in ex. Etiam molestie leo sit amet ligula luctus lacinia. Vestibulum eget risus venenatis ipsum dapibus tempor in ac quam. Pellentesque scelerisque et nunc vitae porttitor. Etiam venenatis sed ligula vel pulvinar. Vestibulum mollis purus rutrum odio dictum, vel facilisis elit faucibus. Aenean auctor a ligula id elementum.",
       "price": "300",
       "quantity": "2",
       "image": "https://i.postimg.cc/yxf9ZJK3/set.jpg"
 
+    },
+    {
+      "id": 5,
+      "name": "Product E",
+      "description": "Aenean eget augue massa. Quisque id tellus nec est varius hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam eget neque quis sem sodales consectetur nec quis nunc. Sed sit amet tortor ac risus volutpat elementum. Nam at accumsan est. Morbi dignissim ultrices nisl, quis dictum mauris mattis et.",
+      "price": "250",
+      "quantity": "5",
+      "image": "https://example.com/productE.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Product F",
+      "description": "Vestibulum vestibulum lacus ac velit finibus, a tincidunt ipsum aliquam. Aliquam eu feugiat enim, id tincidunt turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla euismod augue vitae vestibulum eleifend.",
+      "price": "180",
+      "quantity": "8",
+      "image": "https://example.com/productF.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Product G",
+      "description": "Pellentesque sed purus nec eros pulvinar auctor. Curabitur nec est at nisi scelerisque laoreet nec at ex. Proin congue felis id dolor pharetra faucibus. Nullam sit amet interdum justo, eget convallis ipsum.",
+      "price": "120",
+      "quantity": "12",
+      "image": "https://example.com/productG.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Product H",
+      "description": "Fusce sit amet justo at sem maximus vulputate. Duis non malesuada dui. Curabitur condimentum tincidunt enim, non elementum tellus pharetra ac. Quisque eget lacinia erat, eu fringilla mauris. Nam ut eros non tellus eleifend vestibulum.",
+      "price": "350",
+      "quantity": "3",
+      "image": "https://example.com/productH.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Product I",
+      "description": "Integer sit amet libero id justo egestas elementum. Ut auctor risus vel dui elementum, ac sodales enim ullamcorper. Nulla ut augue at ipsum consectetur malesuada. Sed a sapien vitae nunc tristique suscipit a nec metus.",
+      "price": "200",
+      "quantity": "6",
+      "image": "https://example.com/productI.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Product J",
+      "description": "Vivamus nec lorem eu eros convallis viverra a ac sapien. Aliquam erat volutpat. Nullam in elit vitae nulla auctor sodales sed quis sem. Sed aliquam ipsum vitae velit lacinia, at pharetra orci commodo.",
+      "price": "280",
+      "quantity": "4",
+      "image": "https://example.com/productJ.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Product K",
+      "description": "Donec efficitur finibus felis, a vestibulum est ultrices non. Mauris volutpat ex in neque tempor, nec tincidunt ipsum ultrices. Integer suscipit ante eu libero vestibulum, a faucibus lorem aliquam.",
+      "price": "150",
+      "quantity": "10",
+      "image": "https://example.com/productK.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Product L",
+      "description": "Nam sollicitudin est eget magna consectetur, nec tempus felis ullamcorper. Nullam posuere justo in scelerisque ullamcorper. Vivamus vitae sodales dolor. Vestibulum condimentum euismod felis, nec fringilla nunc vehicula ac.",
+      "price": "300",
+      "quantity": "7",
+      "image": "https://example.com/productL.jpg"
     }
   ]
 }
