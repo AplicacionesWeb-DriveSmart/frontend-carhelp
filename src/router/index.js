@@ -58,6 +58,11 @@ const router = createRouter({
             path: "/preview-invoice",
             name: "preview-invoice",
             component: () => import("../invoice/pages/invoice-preview.component.vue"),
+        },
+        {
+            path: "/vehicles",
+            name: "vehicles",
+            component: () => import("../vehicles/components/vehicle-list.component.vue"),
         }
     ]
 })

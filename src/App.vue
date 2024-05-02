@@ -19,7 +19,7 @@ export default {
       items: [
         { label: "Home", to: "/home" },
         { label: "Client", to: "/client"},
-        { label: "Vehicles"},
+        { label: "Vehicles", to: "/vehicles"},
         { label: 'Inventory', to: '/inventory' },
         { label: "Chats"},
         { label: "Invoice", to: "/invoices"},
