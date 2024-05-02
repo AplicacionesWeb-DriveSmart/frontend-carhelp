@@ -37,6 +37,21 @@ const router = createRouter({
             path: "/add",
             name: "add",
             component: () => import("../Client/pages/client-add.component.vue"),
+        },
+        {
+            path: "/invoices",
+            name: "invoices",
+            component: () => import("../invoice/pages/invoice-list.component.vue"),
+        },
+        {
+            path: "/add-invoice",
+            name: "add-invoice",
+            component: () => import("../invoice/pages/add-invoice.component.vue"),
+        },
+        {
+            path: "/preview-invoice",
+            name: "preview-invoice",
+            component: () => import("../invoice/pages/invoice-preview.component.vue"),
         }
     ]
 })

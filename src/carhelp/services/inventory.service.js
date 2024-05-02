@@ -1,4 +1,5 @@
 import http from '../../shared/services/http-common';
+
 export class InventoryService {
     getAll() {
         return http.get('/spare-parts');
