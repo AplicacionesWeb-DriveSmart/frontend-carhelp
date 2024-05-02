@@ -24,7 +24,7 @@ export default {
         { label: "Chats"},
         { label: "Invoice", to: "/invoices"},
         { label: "Configuration"},
-        { label: "Support"},
+        { label: "Support", to: "/support"},
         { label: "Plans"},
       ]
     }
@@ -53,7 +53,7 @@ export default {
     </pv-toolbar>
   </div>
   <pv-sidebar v-model:visible="drawer">
-    <img src="/public/logo.jpg" width="100px">
+    <img src="/public/Logo_CarHelp%20.png" width="100px">
     <div class="sidebar-items">
       <router-link
           v-for="item in items"
