@@ -38,7 +38,7 @@ export default {
 
   </div>
   <div class="image">
-    <img src="../../assets/img/background.png">
+    <img src="../../assets/vue.svg">
   </div>
 </template>
 
