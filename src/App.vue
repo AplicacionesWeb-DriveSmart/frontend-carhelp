@@ -18,9 +18,9 @@ export default {
         { label: "Client", to: "/client"},
         { label: "Vehicles", to: "/vehicles"},
         { label: 'Inventory', to: '/inventory' },
-        { label: "Chats"},
+        //{ label: "Chats"},
         { label: "Invoice", to: "/invoices"},
-        { label: "Configuration"},
+        //{ label: "Configuration"},
         { label: "Support", to: "/support"},
         { label: "Plans", to: "/plans"},
       ]
